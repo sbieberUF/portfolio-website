@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <script src="https://kit.fontawesome.com/01861c9ac5.js" crossorigin="anonymous"></script>
+
+        <!--==================== FONTAWESOME ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="/assets/css/styles.css">
+
+        <!--==================== EMAILJS ====================-->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "s461Hqq-U1L7BqDKT",
+            });
+        })();
+        </script>
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container"> 
+                <a href="#" class="nav__logo">Sydney</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-lightbulb-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualifications" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Qualifications
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                     <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+        
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/sydney-ann-bieber/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://github.com/sbieberUF" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                        <div class="home__img">
+                            <svg class="home__blob"viewBox="0 0 200 190" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M 100, 100 m -90, 0 a 90,90 0 1,0 180,0 a 90,90 0 1,0 -180,0"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M 100, 100 m -90, 0 a 90,90 0 1,0 180,0 a 90,90 0 1,0 -180,0"/>
+                                    
+                                    <image class="home__blob-img" x='10' y='-40' xlink:href="assets/img/Snapseed.jpg"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">
+                                <span class="fa-solid fa-hand-sparkles fa-bounce"></span>
+                                Hi, I'm Sydney 
+                            </h1>
+                            <h3 class="home__subtitle">Computer Science Graduate from The University of Florida</h3>
+                            <p class="home__description">Experience in website/mobile development, C++, Java, and Python</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    
+                    <div class="about__data">
+                        <p class="about__description"> With a computer science degree and experience in various roles, from developing secure social media storage solutions to optimizing data transfer in a genetics lab, I bring a diverse skill set to every project. I have a keen eye for detail, honed through my time in transcription, and am skilled in both frontend and backend development, as well as Java and C++.</p>
+                            
+                        <p class="about__description"> I thrive in collaborative environments and enjoy participating in agile/scrum processes to deliver high-quality solutions. My recent projects include creating a journaling/well-being tracker app designed to support the emotional well-being of individuals with autism and implementing dynamic theming for web applications.</p>
+
+                        <p class="about__description"> When I'm not coding, I love woodworking, hiking, and taking care of my plants! <i class="fa-solid fa-seedling fa-flip" style="--fa-animation-duration: 2.5s;"></i> </p>
+                            </p>
+                        <div class="about__info">
+                            <div>
+                                 <!-- <span class="about__info-title">04+</span>
+                                <span class="about__info-name">Years <br> expereince</span> -->
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/SydneyBieberResume.pdf" class="button button--flex">
+                                Download Resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+            
+                <div class="skills__container container grid">
+                <div>
+                    <!--==================== SKILLS FRONTEND ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+                        
+                        <div>
+                            <h1 class="class skills__title">Frontend Development</h1>
+                        </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                            
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles ">
+                                    <h3 class="skills__name">HTML</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SKILLS BACKEND ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network skills__icon"></i>
+                        
+                        <div>
+                            <h1 class="class skills__title">Backend Development</h1>
+                        </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles ">
+                                    <h3 class="skills__name">NoSQL (Firebase)</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SQL (Oracle SQL Developer)</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node.js</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Express</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MongoDB</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!--==================== SKILLS MOBILE ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-mobile-android skills__icon"></i>
+                        
+                        <div>
+                            <h1 class="class skills__title">Mobile Development</h1>
+                        </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles ">
+                                    <h3 class="skills__name">React Native</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Expo</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!--==================== SKILLS GENERAL ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-code-branch skills__icon"></i>
+                        
+                        <div>
+                            <h1 class="class skills__title">General Programming Languages</h1>
+                        </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles ">
+                                    <h3 class="skills__name">Java</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C++</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            </section>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualifications"> 
+                <h2 class="section__title">Qualifications</h2>
+                <span class="section__subtitle">My personal journey</span>
+                
+                <div class="qualification__container container">
+                    <div class="qulification__sections">
+                        <div class="qualification__content">
+                            <!--==================== QUALIFICATION TITLE 1 ====================-->
+                            <div class="qualification__tabone">
+                                <div class="qualification__button button--flex">
+                                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                                    Education
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Bachelor of Science in Computer Science</h3>
+                                    <span class="qualification__subtitle">University of Florida</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        August 2020 - May 2024
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION TITLE 2 ====================-->
+                            <div class="qualification__tabtwo">
+                                <div class="qualification__button button--flex">
+                                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                                </div>
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Apprenticeship</h3>
+                                    <span class="qualification__subtitle">Traject</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        August 2022 - December 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Laboratory Technician</h3>
+                                    <span class="qualification__subtitle">University of Florida Institude of Food and Agricultural Sciences</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        May 2022 - July 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 4 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Scribe</h3>
+                                    <span class="qualification__subtitle">Copytalk Business Services</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        February 2023 - June 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <!--<section class="services section" id="services">
+                        Possible Section For The Future! 
+            </section> --> 
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="class section__subtitle">Most recent work</span>
+
+                <div class="class portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                      <!--==================== PORTFOLIO 1 ====================--> 
+                        <div class="portfolio__content1 grid swiper-slide">
+                            <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+
+                            <div class="portfiolio__data">
+                                <h3 class="portfolio__title">PuzzlePeace</h3>
+                                    <p class="portfolio__description">PuzzlePeace is a collaborative project designed to enhance the emotional well-being of individuals with autism. 
+                                        Using React Native (JavaScript), Expo, and CSS, the platform provides a refined and responsive interface. 
+                                        Firebase with NoSQL supports real-time data management, enabling seamless journaling of daily experiences, emotions, and behaviors. 
+                                        The platform offers personalized emotional analysis for caregivers and teachers, delivering tailored insights to support individuals with autism effectively. 
+                                        <!-- Additionally, it facilitates collaboration among caregivers and educators to share observations and strategies, ensuring a comprehensive support system. -->
+                                    </p>
+                                    <a href="https://www.youtube.com/watch?v=2ldL-Hh2LlI" target="_blank" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                            </div>
+                        </div>
+                           <!--==================== PORTFOLIO 2 ====================--> 
+                           <div class="portfolio__content2 grid swiper-slide">
+                            <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
+
+                            <div class="portfiolio__data">
+                                <h3 class="portfolio__title">CensorMate</h3>
+                                    <p class="portfolio__description">CensorMate is a Chrome extension developed using HTML, CSS, and JavaScript that allows users to block and replace specific words on any webpage. 
+                                        Users can customize both the words to block and their replacements, with changes applied dynamically using the MutationObserver Web API to monitor and update text as the page content changes. 
+                                        The extension also uses the Chrome Storage API to securely save and manage user settings. 
+                                        With password protection to prevent unauthorized access, CensorMate is ideal for use around children, ensuring that the blocked words list and its settings remain secure and unaltered.</p>
+                                    <a href="https://youtu.be/hh1u6bdhRUQ" target="_blank" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================--> 
+                        <div class="portfolio__content3 grid swiper-slide">
+                            <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
+
+                            <div class="portfiolio__data">
+                                <h3 class="portfolio__title">File Converter</h3>
+                                    <p class="portfolio__description">Developed with Python, this application is a versatile file converter that allows users to convert various file types, including images, text files, CSVs, PDFs, and Word Documents into different formats. 
+                                        It supports converting images between common formats like JPG and PNG, transforming text files into PDFs, converting CSV files into Excel spreadsheets and SQL insert statements, and more. 
+                                        The program guides users through the conversion process with simple text-based input, making it a powerful tool for handling diverse file conversions efficiently.</p>
+                                    <a href="https://youtu.be/Hc_W-WnIrOs" target="_blank" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                     <div class="class swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                     </div>
+                     <div class="class swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                     </div>
+
+                     <!-- Add Pagination -->
+                      <div class="class swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="class contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="class contact__title">Call Me</h3>
+                                <span class="class contact__subtitle">407-929-2748</span>
+                            </div>
+                        </div>
+                    
+                    
+                       
+                        <div class="class contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="class contact__title">Email</h3>
+                                <span class="class contact__subtitle">sydabieber@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="class contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="class contact__title">Location</h3>
+                                <span class="class contact__subtitle">Orlando, FL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" name="name" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" name="email" class="contact__input" required>
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="subject" class="contact__label">Subject</label>
+                            <input type="text" name="subject" class="contact__input" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
+                        </div>
+                    
+                        <div>
+                            <a href="#" class="button button--flex" id="submit-button">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                    </div>    
+                    
+            </section>
+            </main>
+        
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Sydney</h1>
+                        <span class="footer__subtitle">Developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/sydney-ann-bieber/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/sbieberUF" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copy">&#169; 2024 Sydney Bieber. All rights reserved. </p>
+            </div>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+
+        
+    </body>
+</html>
